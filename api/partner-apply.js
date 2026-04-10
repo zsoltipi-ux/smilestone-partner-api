@@ -52,7 +52,7 @@ async function sendEmail(d) {
     headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${RESEND_API_KEY}` },
     body: JSON.stringify({
       from: FROM_EMAIL,
-      to: 'hq@smilestone.hu',
+      to: 'zsoltipi@gmail.com',
       subject: `🤝 Új partner: ${d.name} — ${d.regions||'régió n/a'}`,
       html
     })
